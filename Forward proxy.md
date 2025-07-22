@@ -1,0 +1,1 @@
+caches documents close to clients
