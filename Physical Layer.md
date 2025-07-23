@@ -4,7 +4,7 @@ The physical layers provides an abstraction and model of the real-world implemen
 ## Transmission delay
 $$\frac{M[bits]}{R[\frac{bits}{second}]}$$
 ## Propagation delay
-$$D = \frac{L_{packet}}{\frac{2}{3}c}$$
+$$D = \frac{L_{link}}{\frac{2}{3}c}$$
 
 # Total latency
 

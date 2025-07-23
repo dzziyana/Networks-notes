@@ -1,4 +1,4 @@
-[[Network Layer - DeepSeek]]
+[[Network Layer Lecture Summary]]
 Virtual Circuit Model (§1.3.2)
 **Three phases:**
 
