@@ -2,7 +2,6 @@
 
 ## On-demand (Packet-switching)
 - more scalable 
-
 # Circuit-switched Networks
 ## Multiplexing
 ![[Pasted image 20250316170704.png]]

@@ -32,7 +32,7 @@ cwnd = cwnd + 1
 ## Congestion Avoidance (CA) - Linear Growth
 ```
 else:
-	cwnd = cwnd + 1/ cwnd
+	cwnd = cwnd + 1/cwnd
 dup_ack = 0
 ```
 ### When? 
@@ -47,7 +47,7 @@ dup_ack = 0
 ==Multiplicative Decrease== defines the rate for which we indirectly regulate `cwnd`. It uses ==timeouts== as an indicator for strong congestion. As a consequence it halves the `ssthresh`, which lowers the phase of exponentially-fast increase.
 ```
 On Timeout:
-	ssthresh = cwnd /2
+	ssthresh = cwnd/2
 	cwnd = 1
 ```
 ---

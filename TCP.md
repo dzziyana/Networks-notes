@@ -1,6 +1,8 @@
 # short info
 uses [[ARQ#Selective repeat|Selective repeat]] and [[ACKing strategies#Cumulative ACKs|cumulative acks]]
 # Header
+"A 5-tuple uniquely identifies a UDP/TCP session." 
+	 The tuple consists of (source IP, source port, destination ip, destination port, protocol)
 ![[Pasted image 20250325142235.png]]
 ## Header anatomy (closer look)
 ![[Pasted image 20250325173837.png]]
@@ -76,10 +78,17 @@ ACK is used during the **TCP 3-way handshake** to establish a connection.
 
 > The TCP handshakes usually only needs one RTT because data can already be sent "attached" to the first ACK (this is called *piggybacking*), else it needs 1.5 RTT
 
-
 ## Timeouts and Retransmissions
-Retransmission of packet containing “next byte” when timer goes off. TCP uses [[Retransmission algorithms]]
+Retransmission of packet containing “next byte” when timer goes off. TCP uses [[Retransmission algorithms#Go-Back-N|Go-back-N]]
 TCP resets timer whenever new data is ACK-ed
+
+# Quick facts
+- A TCP connection becomes symmetric once it is estabilished
+- TCP provides a "full duplex service" (cf. following footnote)
+
+>*Simplex*: data may only flow one way.  
+  *Half-duplex*: data may flow both ways, but not simultaneously  
+  *Full-duplex*: data may flow both ways simultaneously
 # Further TCP topics
 [[TCP - RTT estimation]]
 [[TCP congestion control]]
