@@ -7,7 +7,7 @@ Node just sends when it has traffic.
 # CSMA (Carrier Sense Multiple Access)
 - Improve Aloha by listening for activity before sending
 	- Can do easily with wires, not wireless
-*Still ***possible to listen and hear nothing*** when another node is sending because of delay*
+*Still ***possible to listen and hear nothing*** when another node is sending because of delay
 ## /CD (with collision detection)
 - Can reduce the cost of collisions by detecting them and aborting (Jam) the rest of the frame time
 	- Again, can be done with wires
@@ -40,3 +40,15 @@ BEB doubles interval for each successive collision
 - Very efficient in practice
 [[Ethernet]]
 ![[Pasted image 20250707115258.png]]
+
+## /CD (with collision avoidance)
+![[Pasted image 20250725112041.png]]
+
+> [!info]
+> CSMA is good under low load:
+> • Grants immediate access
+> • Little overhead (few collisions)
+> 
+> But not so good under high load:
+> • High overhead (expect collisions)
+> • Access time varies (lucky/unlucky)

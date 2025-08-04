@@ -1,0 +1,1 @@
+**Slow convergence** in the context of networks refers to the **delay between a topology change (like a link or router going down) and the network reaching a stable, updated state where all routers agree on the best paths**.

@@ -25,16 +25,12 @@ The **Count to Infinity** problem is a well-known issue in **distance vector 
 Several techniques are used to mitigate the Count to Infinity problem:
 
 ## Split Horizon
-A router does not advertise a route back to the neighbor from which it learned the route.
-    
+A router ==does not advertise== a route back to the neighbor from which it learned the route.
 ## Poison Reverse
-A router explicitly advertises a route back to the sender with an infinite metric to prevent loops.
-    
+A router ==explicitly advertises== a route back to the sender with an ==infinite metric== to prevent loops.
 ## Triggered Updates
 Instead of waiting for periodic updates, a router immediately informs neighbors about a failure.
-    
 ## Hold-Down Timers 
 When a route becomes unreachable, the router waits for some time before accepting alternative routes.
-    
 ## Setting a Maximum Hop Count
-RIP, for example, sets the maximum hop count to **15** to prevent indefinite looping.
+[[RIP]], for example, sets the maximum hop count to 16 to prevent indefinite looping.

@@ -39,3 +39,4 @@ OS stores...
 ![[Pasted image 20250326134633.png]]
 ... whereas ==in UDP there is a connection ID== (app layer multiplexing needed)
 
+![[Pasted image 20250804135223.png]]

@@ -4,10 +4,16 @@
 We covered three different versions on how to address this problem:
 ## 1. Byte Count :
 Each frame has as length field.
-## 2. Flags : 
+## 2. Byte stuffing / Flagging : 
 Uses flag pattern ‘01111110‘ at beginning and end.
-## 3. Bit stuffing / Stuffy Bits :
 Use escape pattern to escape flags appearing in the payload.
+## 3. Bit stuffing / Stuffy Bits :
+**Can stuff at the bit level too**
+
+• Call a flag six consecutive 1s
+• On transmit, after five 1s in the data, insert a 0
+• On receive, a 0 after five 1s is deleted
+![[Pasted image 20250725144935.png]]
 
 # Addressing
 primarily achieved through the use of Media Access Control (MAC) addresses, which uniquely
@@ -16,7 +22,7 @@ Protocols like [[ARP]] assist in mapping higher-layer addresses to MAC addresses
 
 # Error Correction
 - [[ARQ]]
-- [[Hamming Codes]]
+- [[Hamming Code]]
 
 # Avoiding concurrency
 [[Multiplexing]]

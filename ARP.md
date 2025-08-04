@@ -6,6 +6,8 @@ is used to map a local IP address to the link layer addresses
 > How does it get the destination link address from a destination IP address?
 
 ![[Pasted image 20250327181635.png]]
+# Protocol Stack
+![[Pasted image 20250731111702.png]]
 
 ARP resolves destination hardware addresses by a two-step procedure.
 

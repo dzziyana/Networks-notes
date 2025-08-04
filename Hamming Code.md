@@ -3,8 +3,12 @@ In this context we define the
 # Hamming Distance 
 which is the minimum distance between any pair of strings. To determine the distance between two binary strings one can just count the digits where both differ.
 ![[Pasted image 20250722144741.png]]
+# Method
+- Uses $n = 2^k– k – 1$ 
+- Put check bits in positions _p_ that are powers of 2, starting with position 1
 # Check bits
 - $b_i$ where $i$ is a power of 2.
+![[Pasted image 20250725161801.png]]
 ## Syndrome
 The syndrome of the code is a bit string $p_1p_2...p_n$ where $p_{i}$ is the parity (sum $mod2$) of all positions which have the $i$-th bit set in the binary representation of the position
 > For a Hamming code of length 6:

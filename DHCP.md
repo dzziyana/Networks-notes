@@ -15,3 +15,5 @@ To renew an existing lease, an abbreviated sequence is used:
 
 • REQUEST , followed by ACK
 Protocol also supports replicated servers for reliability
+
+## ... is on top of [[UDP]]

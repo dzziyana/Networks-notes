@@ -9,9 +9,9 @@ The client sends a Client Hello packet to the server. This packet includes the i
 #TODO
 
 ### **Has QUIC Replaced the Conventional Stack?**
-🔹 Not completely, but it's replacing TCP+TLS+HTTP/2 for many applications
-🔹 QUIC integrates **transport (TCP-like) and security (TLS) into one protocol**  
-🔹 HTTP/3 **requires QUIC**, so any website using HTTP/3 is using QUIC instead of TCP
+- Not completely, but it's replacing TCP+TLS+HTTP/2 for many applications
+- QUIC integrates **transport (TCP-like) and security (TLS) into one protocol**  
+- HTTP/3 **requires QUIC**, so any website using HTTP/3 is using QUIC instead of TCP
 
 #### What QUIC replaces
 - **TCP** (QUIC runs over UDP, implementing its own congestion control)

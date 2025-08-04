@@ -9,3 +9,7 @@ This field indicates the position of the current fragment within the original da
 These bits include flags such as the ”More Fragments” (MF) flag and the ”Don’t Fragment” (DF) flag. The MF flag indicates whether more fragments of the original datagram are to follow,
 
 while the (DF) flag instructs routers not to fragment the datagram if it exceeds the MTU of the outgoing interface.
+
+
+> [!NOTE] 
+> Related to / simplification of the page [[Packet size solutions]]
